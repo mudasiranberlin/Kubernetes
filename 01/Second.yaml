@@ -1,0 +1,14 @@
+# kubecrl create ns demo run this command first to create namespace 
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  namespace: demo   //here is the name space 
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
+
