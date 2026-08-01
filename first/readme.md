@@ -40,6 +40,8 @@ spec:
 
   # and now we will create the 2 pods 
 
+  vi pod.yaml
+
 
   kind: Pod
 apiVersion: v1
@@ -58,5 +60,43 @@ spec:
     image: ubuntu
     command: ["/bin/bash", "-c", "while true; do echo Hello-Bhupinder; sleep 5; done"]
 
-  restartPolicy: Never
+
+  now after that  run command 
+
+  kubectl apply -f pod.yaml
+
+  kubectl get pods   # now you will see 2 container
+
+  kubectl describe pod testpod
+
+
+  kubectl logs -f testpod  # testpod is the name given to my pod u can check the name in describe and you will see details of 2 containers
+
+
+ kubectl logs -f testpod  -c c00 # u can change the container name 
+
+ kubectl exec testpod  -c c01 -- hostname -i
+ # this command give you I-address 
+
+
+ kubectl exec testpod -it  -c c01 -- bin/bash   # Go inside the container
+
+  kubectl delete pod testpod 
+
+
+  Now we are using the environment variable :
+
+  
+kind: Pod
+apiVersion: v1
+metadata:
+  name: environments
+spec:
+  containers:
+    - name: c00
+      image: ubuntu
+      command: ["/bin/bash", "-c", "while true; do echo Hello-Bhupinder; sleep 5 ; done"]
+      env:                        # List of environment variables to be used inside the pod
+      - name: MYNAME
+        value: BHUPINDER
 
