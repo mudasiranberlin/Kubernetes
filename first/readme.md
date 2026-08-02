@@ -100,3 +100,40 @@ spec:
       - name: MYNAME
         value: BHUPINDER
 
+
+
+save and 
+
+kubectl apply -f pod.yaml
+
+  kubectl get pods   # now you will see 2 container
+
+  kubectl describe pod testpod
+
+kubectl exec environments -it -- bin/bash
+
+inside the container 
+
+env
+
+echo $MYNAME
+output your name 
+
+
+install apache 
+
+kind: Pod
+apiVersion: v1
+
+metadata:
+  name: testpod4
+
+spec:
+  containers:
+    - name: c00
+      image: httpd
+      ports:
+        - containerPort: 80
+
+
+        
