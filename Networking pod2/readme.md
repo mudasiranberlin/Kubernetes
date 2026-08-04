@@ -75,10 +75,10 @@ Create first pod:
 kubectl apply -f testpod1.yaml
 ```
 
-Create second pod:
+Create second pod if you have deployment:
 
 ```bash
-kubectl apply -f testpod4.yaml
+kubectl exec -it mydeployments -- sh 
 ```
 
 ---
