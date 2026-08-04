@@ -137,6 +137,23 @@ curl 10.244.0.14:80
 
 ---
 
+
+# Step 7: Now delete pods , services and deployments
+
+Run:
+
+```bash
+
+kubectl delete pod backend-pod frontend-pod
+
+kubectl delete svc backend-service
+
+kubectl delete pod mydeployments-5b469d887b-fndc6
+```
+
+---
+
+
 # Expected Output
 
 ```html
