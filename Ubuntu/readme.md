@@ -78,6 +78,10 @@ kubectl get nodes
 # Complete Installation Commands
 
 
+
+====================================================================================================================================
+
+
 sudo apt update
 sudo apt install -y docker.io
 sudo systemctl enable docker
