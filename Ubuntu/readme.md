@@ -287,6 +287,10 @@ minikube version
 
 ```bash
 sudo apt install -y conntrack
+
+sudo usermod -aG docker $USER
+
+newgrp docker
 ```
 
 ---
@@ -695,6 +699,10 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 sudo apt install -y conntrack
+
+sudo usermod -aG docker $USER
+
+newgrp docker
 
 minikube start --driver=docker
 
