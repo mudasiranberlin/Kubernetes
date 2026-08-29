@@ -245,3 +245,13 @@ Pod
 **ConfigMap as Volume:** Allows Kubernetes to make ConfigMap data available as **files inside a container**.
 
 > **In short:** We created a configuration file → stored it in a ConfigMap → mounted the ConfigMap as a volume → accessed the file inside the Pod.
+>
+> ---
+
+## 👨‍💻 Author
+
+**Name:** Mudasir Ahmad anberlin
+**Location:** Phnom Penh, Cambodia
+**Topic:** Kubernetes / ConfigMap
+**Purpose:** Learning & Interview Preparation
+
