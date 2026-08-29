@@ -185,3 +185,12 @@ echo $MYENV
 ```
 
 > **In short:** Instead of mounting the ConfigMap as a file, we use `configMapKeyRef` to put its value into an environment variable.
+
+---
+
+## 👨‍💻 Author
+
+**Name:** Mudasir Ahmad /anberlin
+**Location:** Phnom Penh, Cambodia
+**Topic:** Kubernetes / ConfigMap
+**Purpose:** Learning & Interview Preparation
